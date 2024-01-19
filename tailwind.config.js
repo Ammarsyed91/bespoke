@@ -5,6 +5,16 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  keyframes: {
+    wiggle: {
+      '0%, 100%': { transform: 'rotate(-3deg)' },
+      '50%': { transform: 'rotate(3deg)' },
+    },
+  },
+  animation: {
+    wiggle: 'wiggle 1s ease-in-out infinite',
+  },
+
   theme: {
     extend: {
       backgroundImage: {
